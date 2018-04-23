@@ -4,6 +4,9 @@ import Hello from "./Hello";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
 import LevelOne from "./level-one.js";
+import demoApp from "./reducer";
+
+const store = createStore(demoApp);
 
 const styles = {
   fontFamily: "sans-serif",
@@ -11,11 +14,11 @@ const styles = {
 };
 
 const App = () => (
-  <div style={styles}>
-    <Hello name="CodeSandbox" />
-    <h2>Start editing to see some magic happen! {"\u2728"}</h2>
-    <LevelOne />
-  </div>
+  <Provider store={store}>
+    <div style={styles}>
+      <LevelOne />
+    </div>
+  </Provider>
 );
 
 render(<App />, document.getElementById("root"));

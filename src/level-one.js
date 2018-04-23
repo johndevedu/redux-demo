@@ -9,7 +9,7 @@ export default class MainComponent extends React.Component {
   render() {
     return (
       <div className="component-main">
-        <h1>Main Component!</h1>
+        <h1>Hello from level one! </h1>
         <LevelTwo name="c50" handleClick={this.handleClick} />
       </div>
     );
