@@ -1,0 +1,14 @@
+.component-main {
+  border: 1px blue solid;
+  padding: 0.5em;
+}
+
+.component-sub {
+  border: 1px orange solid;
+  padding: 0.5em;
+}
+
+.component-level-three {
+  border: 1px green solid;
+  padding: 0.5em;
+}

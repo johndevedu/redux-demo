@@ -5,6 +5,7 @@ import { Provider } from "react-redux";
 import { createStore } from "redux";
 import LevelOne from "./level-one.js";
 import demoApp from "./reducer";
+import './style.css'
 
 const store = createStore(demoApp);
 
